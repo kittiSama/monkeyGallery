@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             x:Class="MauiApp1.MainPage"
+    xmlns:models="clr-namespace:MauiApp1"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:DataType="models:Monkey">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="{Binding Name}"></Label>
+            <Label Text="{Binding Location}"></Label>
+            <Label Text="{Binding Details}"></Label>
+            <Image Source="{Binding Image}" HeightRequest="100"></Image>
+            <Label Text="{Binding Population}"></Label>
+
+            <Button Clicked="Right" Text="→"></Button>
+
+            <Button Clicked="Left" Text="←"></Button>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
